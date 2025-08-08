@@ -1,0 +1,74 @@
+/* --- IMPORTANDO PADRÕES DO SITE --- */
+@import url(./partials/typography.css);
+@import url(./partials/colors.css);
+@import url(./partials/layout.css);
+@import url(./partials/spacing.css);
+@import url(./partials/menu.css);
+@import url(./partials/buttons.css);
+
+/* --- IMPORTANDO AS PAGINAS VISÃO CLIENTE --- */
+@import url(./pages/dashboard/dashboard-adm.css);
+
+
+/* --- IMPORTANDO AS PAGINAS VISÃO ADM --- */
+@import url(../dashboard/dash-caio/dashboard-alert.css);
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* LARGURA DA BARRA DE ROLAGEM */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* FUNDA DA BARRA DE ROLAGEM */
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+/* COR DA BARRA DE MEDIDA */
+::-webkit-scrollbar-thumb {
+    background: var(--darked-purple);
+    border-radius: 3px;
+}
+
+/* HOVER DA BARRA DE MEDIDA */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--darked-purple);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
