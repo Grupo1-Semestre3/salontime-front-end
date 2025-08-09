@@ -1,49 +1,16 @@
-:root{    
-    --darkness-purple: #0f001a;
-    --dark-purple: #4E2E9E;
-    /* --dark-purple: #36206d; */
-    --normal-purple: #6D4BC7;
-    --light-purple: #794ED4;
-    --extra-light-purple: #9870FF;
+/* PADRÃO DE CORES - BASTA SEGUIR O PROTÓTIPO */
+:root{     
+    --rosa-1: #DD236D;
+    --rosa-2: #FFF0F6;
+    --rosa-3: #FFFAFC;
+    --rosa-4: #FFFFFF;
+    
+    --marrom-1: #211F1E;
+    --marrom-2: #675D58;
+    
+    --cinza-1: #F5F5F5;
+    --cinza-2: #D7D7D7;
 
-    /* Neutral-colors */
-    --darkness-black: #0c0c0c;
-    --dark-black: #161617;
-    --normal-black: #1c1c1c;
-    --light-black: #141414;
-
-    --white-normal: #f7edfd;
-    --white-dark: #edeaef;
-    --white-darknes: #79747c;
-    --white-light: #fefbff;
-
-    /* Gray Scale */
-    --gray-0: #2e2e2e;
-    --gray-1: #454446;
-    --gray-2: #555456;
-    --gray-3: #666566;
-    --gray-4: #767576;
-    --gray-5: #868587;
-    --gray-6: #969597;
-    --gray-7: #a6a6a7;
-    --gray-8: #dfdfdf;
-
-    /* Auxiliary colors */
-    --red-normal: #eb3d3d;
-    --red-dark: #d03333;
-    --red-light: #f05454;
-    --red-strong: #fa0f0f;
-
-    --green-normal: #32d957;
-    --green-dark: #28bb49;
-    --green-light: #50e170;
-
-    --yellow-normal: #ffce52;
-    --yellow-dark: #d9b043;
-    --yellow-light: #ffd76b;
-
-     --orange-normal: #ff9100;
-     --orange-dark: #cc8400;
-     --orange-light: #ffb733;
-     
+    --verde: #008704;
+    --vermelho: #B10009;     
 }
