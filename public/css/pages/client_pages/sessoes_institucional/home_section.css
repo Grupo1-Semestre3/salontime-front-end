@@ -1,4 +1,4 @@
-.home_session_pai{
+.home_section_pai{
     display: flex;
     justify-content: start;
     align-items: start;
@@ -8,7 +8,7 @@
     z-index: 1;
 }
 
-.home_session_title{
+.home_section_title{
 
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
     /* background-color: aqua; */
 }
 
-.home_session_title_desc{
+.home_section_title_desc{
 
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
     /* background-color: blue; */
 }
 
-.home_session_img{
+.home_section_img{
     display: flex;
     align-items: center;
     justify-content: center;

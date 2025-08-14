@@ -60,12 +60,12 @@
 
 /* FUNDA DA BARRA DE ROLAGEM */
 ::-webkit-scrollbar-track {
-    background: var(--rosa1);
+    background: var(--rosa-3);
 }
 
 /* COR DA BARRA DE MEDIDA */
 ::-webkit-scrollbar-thumb {
-    background: var(--rosa1);
+    background: var(--rosa-1);
     border-radius: 3px;
 }
 
