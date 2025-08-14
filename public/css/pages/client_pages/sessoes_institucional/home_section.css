@@ -6,9 +6,21 @@
     z-index: 1;
 }
 
-.home_session_desc{
-    width: 60%;
+.home_session_title{
+
+    width: 100%;
+    max-width: 682px;
     height: 100%;
+
     padding-top: 180px;
     padding-bottom: 80px;
+    gap: 64px;
+    
+    background-color: aqua;
+}
+
+.home_session_title_desc{
+    height: auto;
+    gap: 32px;
+    background-color: blue;
 }

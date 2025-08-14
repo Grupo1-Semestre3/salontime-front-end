@@ -77,6 +77,11 @@
   color: var(--rosa-4);
 }
 
+.btn-juntos {
+  display: flex;
+  gap: 16px;
+}
+
 
 
 .btn-rosa:hover {
