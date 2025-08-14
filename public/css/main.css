@@ -94,7 +94,7 @@ body {
 
 section{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     position: relative;
     padding: 0px 80px;   
 }
