@@ -1,5 +1,14 @@
 .home_session_pai{
     display: flex;
     background-color: var(--rosa-3);
-    height: 4000px;
+    width: 100%;
+    height: 813px;
+    z-index: 1;
+}
+
+.home_session_desc{
+    width: 60%;
+    height: 100%;
+    padding-top: 180px;
+    padding-bottom: 80px;
 }

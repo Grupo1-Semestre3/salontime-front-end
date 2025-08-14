@@ -3,12 +3,15 @@
 .btn-rosa {
   display: flex;
   width: auto;
-  min-width: 120px;
-  height: auto;
+  height:  min-content;
+  min-height: 42px;
   max-height: 50px;
-  padding: 16px;
+
   align-items: center;
   justify-content: center;
+
+  padding-left: 24px;
+  padding-right: 24px; 
   gap: 10px;
 
   border-radius: 32px;
@@ -19,28 +22,35 @@
 .btn-branco {
   display: flex;
   width: auto;
-  min-width: 120px;
-  height: auto;
+  height:  min-content;
+  min-height: 42px;
   max-height: 50px;
-  padding: 16px;
+
   align-items: center;
   justify-content: center;
-  gap: 10;
+
+  padding-left: 24px;
+  padding-right: 24px; 
+  gap: 10px;
   
   border-radius: 32px;
   border: 2px solid var(--rosa-1);
+  background: var(--rosa-4);
   color: var(--rosa-1);
 }
 
 .btn-verde {
   display: flex;
   width: auto;
-  min-width: 120px;
-  height: auto;
+  height:  min-content;
+  min-height: 42px;
   max-height: 50px;
-  padding: 16px;
+
   align-items: center;
   justify-content: center;
+
+  padding-left: 24px;
+  padding-right: 24px; 
   gap: 10px;
 
   border-radius: 32px;
@@ -51,12 +61,15 @@
 .btn-vermelho {
   display: flex;
   width: auto;
-  min-width: 120px;
-  height: auto;
+  height:  min-content;
+  min-height: 42px;
   max-height: 50px;
-  padding: 16px;
+
   align-items: center;
   justify-content: center;
+
+  padding-left: 24px;
+  padding-right: 24px; 
   gap: 10px;
 
   border-radius: 32px;
