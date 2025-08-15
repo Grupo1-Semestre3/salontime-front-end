@@ -10,6 +10,14 @@
     color: var(--marrom-1);
 }
 
+.bold{
+    font-weight: 600 !important;
+}
+
+.italic{
+    font-style: italic !important;
+}
+
 @media (min-width: 1440px) {
 
     /* Super Titulo */
