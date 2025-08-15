@@ -1,0 +1,56 @@
+.home_session_pai{
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+.card_proximo_agendamento{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    maX-width: 734px;
+    max-height: 186px;
+    height: auto;
+    width: auto;
+    border-radius: 32px;
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border: 1px solid;
+    border-color: var(--coinza-2);
+    box-shadow: -4px 4px 10px 0px #211F1E14;
+
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .conteudo p{
+        display: flex;
+    }
+
+    .botoes{
+        gap: 16px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+
+.hist_agendamento{
+    color: var(--rosa-1);
+    font-family: p;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+}
