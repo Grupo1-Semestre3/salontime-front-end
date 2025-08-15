@@ -1,0 +1,17 @@
+.home_session_pai{
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.card_proximo_agendamento{
+    maX-width: 734px;
+    max-height: 186px;
+    height: auto;
+    width: auto;
+    border-radius: 32px;
+    background-color: #ffffff;
+    padding: 70px;
+}
