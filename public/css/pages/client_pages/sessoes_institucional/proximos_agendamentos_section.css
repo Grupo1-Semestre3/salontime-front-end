@@ -9,7 +9,11 @@
 }
 
 
-
+.conteudo_proximo_agendamento{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
 
 .card_proximo_agendamento{
     display: flex;
@@ -23,17 +27,35 @@
     background-color: #ffffff;
     padding: 40px 30px;
     border: 1px solid;
-    border-color: var(--coinza-2);
+    border-color: #c2c2c2;
     box-shadow: -4px 4px 10px 0px #211F1E14;
+
+    .botoes{
+
+        button{
+            padding: 30px 50px;
+            font-size: 1.1rem;
+
+        }
+
+    }
 
     .conteudo{
         display: flex;
         flex-direction: column;
-        gap: 4px;
+        gap: 10px;
+        width: 100%;
+
+        img{
+            width: 7%;
+        }
+
     }
 
     .conteudo p{
         display: flex;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
     }
 
     .botoes{
@@ -53,4 +75,6 @@
     font-weight: 600;
     margin-top: 10px;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
 }
