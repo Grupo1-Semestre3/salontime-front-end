@@ -1,17 +1,16 @@
 /* PADRÕES PARA BOTÃO */
 
 .btn-rosa {
-  display: flex;
   width: auto;
-  height:  min-content;
+  height: auto;
   min-height: 42px;
   max-height: 50px;
 
+  display: flex;
   align-items: center;
   justify-content: center;
 
-  padding-left: 24px;
-  padding-right: 24px; 
+  padding: 0px 16px;
   gap: 10px;
 
   border-radius: 32px;
@@ -20,19 +19,18 @@
 }
 
 .btn-branco {
-  display: flex;
   width: auto;
-  height:  min-content;
+  height: auto;
   min-height: 42px;
   max-height: 50px;
 
+  display: flex;
   align-items: center;
   justify-content: center;
 
-  padding-left: 24px;
-  padding-right: 24px; 
+  padding: 0px 16px;
   gap: 10px;
-  
+
   border-radius: 32px;
   border: 2px solid var(--rosa-1);
   background: var(--rosa-4);
@@ -40,17 +38,16 @@
 }
 
 .btn-verde {
-  display: flex;
   width: auto;
-  height:  min-content;
+  height: auto;
   min-height: 42px;
   max-height: 50px;
 
+  display: flex;
   align-items: center;
   justify-content: center;
 
-  padding-left: 24px;
-  padding-right: 24px; 
+  padding: 0px 16px;
   gap: 10px;
 
   border-radius: 32px;
@@ -59,17 +56,16 @@
 }
 
 .btn-vermelho {
-  display: flex;
   width: auto;
-  height:  min-content;
+  height: auto;
   min-height: 42px;
   max-height: 50px;
 
+  display: flex;
   align-items: center;
   justify-content: center;
 
-  padding-left: 24px;
-  padding-right: 24px; 
+  padding: 0px 16px;
   gap: 10px;
 
   border-radius: 32px;
@@ -80,23 +76,29 @@
 .btn-juntos {
   display: flex;
   gap: 16px;
+  height: 50px;
 }
 
 
 
 .btn-rosa:hover {
-  background: #b81c59; /* rosa-1 mais escuro */
+  background: #b81c59;
+  /* rosa-1 mais escuro */
 }
 
 .btn-branco:hover {
-  background: #f5f5f5; /* cinza-1 suave */
-  border-color: #b81c59; /* rosa-1 mais escuro */
+  background: #f5f5f5;
+  /* cinza-1 suave */
+  border-color: #b81c59;
+  /* rosa-1 mais escuro */
 }
 
 .btn-verde:hover {
-  background: #006703; /* verde mais escuro */
+  background: #006703;
+  /* verde mais escuro */
 }
 
 .btn-vermelho:hover {
-  background: #8a0007; /* vermelho mais escuro */
+  background: #8a0007;
+  /* vermelho mais escuro */
 }
