@@ -1,61 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>  <!-- UTILIZAR ESSSA HEAD COMO PADRAO PARA AS OUTRAS TELAS -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/main.css" />
-    <link rel="shortcut icon" href="../../assets/svg/logo_rosa.svg" type="image/x-icon" />
-    <title>Salon Time | Serviços</title>
-  </head>
 
-  <body>
-     
-      
-      <nav class="nav_institucional_pai" >
-        <div class="nav_institucional_coluna">
-          <p class="paragrafo-2 underline-hover">Página Inicial</p>
-          <p class="paragrafo-2 underline-hover">Serviços</p>
+<head> <!-- UTILIZAR ESSSA HEAD COMO PADRAO PARA AS OUTRAS TELAS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/main.css" />
+  <link rel="shortcut icon" href="../../assets/svg/logo_rosa.svg" type="image/x-icon" />
+  <title>Salon Time | Serviços</title>
+</head>
+
+<body>
+
+
+  <nav class="nav_institucional_pai">
+    <div class="nav_institucional_coluna">
+      <p class="paragrafo-2 underline-hover">Página Inicial</p>
+      <p class="paragrafo-2 underline-hover">Serviços</p>
+    </div>
+    <div class="nav_institucional_coluna">
+      <img src="../../assets/svg/logo_black.svg" alt="logo" style="height: 50px;">
+    </div>
+    <div class="nav_institucional_coluna">
+      <button class="btn-branco paragrafo-2">Entrar</button>
+      <button class="btn-rosa paragrafo-2">Cadastre-se</button>
+    </div>
+  </nav>
+
+
+
+
+  <section class="principal_section">
+    <div class="home_session_pai">
+      <h2 class="super-titulo">Bem vinda de volta Juliana!</h2>
+
+      <div class="conteudo_proximo_agendamento">
+        <span class="paragrafo-1">Você tem 1 horário marcado:</span>
+
+        <div class="card_proximo_agendamento shadow">
+          <div class="conteudo">
+            <p class="paragrafo-1 bold">Nome do serviço</p>
+            <p class="paragrafo-1 bold" style="display: flex; align-items: end;"> 
+              <img src="../../assets/vector/icon_horariio/ionicons/sharp/time-sharp.svg" alt="">
+              01/01/2000 00:00pm 
+            </p>
+            <p class="paragrafo-1"> <b>Status:</b> Confirmado</p>
+          </div>
+          <div class="btn-juntos" style="flex-direction: column;">
+            <button class="btn-rosa paragrafo-1"">Reagendar</button>
+            <button class="btn-branco paragrafo-1"">Cancelar</button>
+          </div>
         </div>
-        <div class="nav_institucional_coluna">
-          <img src="../../assets/svg/logo_black.svg" alt="logo" style="height: 50px;">
+
+      </div>
+
+      <p class="hist_agendamento paragrafo-2"> 
+        <img src="../../assets/svg/arrow-back.svg" alt="">
+        Histórico de Agendamentos
+      </p>
+
+    </div>
+  </section>
+
+  <section class="marina_points_section">
+    <div class="marina_points_title">
+      <p class="titulo-1" style="color: var(--rosa-2);">Marina Points!</p>
+      <div class="marina_points_dec">
+        <p class="paragrafo-1 bold" style="color: var(--rosa-2);">Complete a trilha para receber um cupom de desconto!
+        </p>
+        <p class="paragrafo-2" style="color: var(--rosa-2);">A cada agendamento realizado 1 ponto é registrado.</p>
+      </div>
+    </div>
+    <div class="marina_points_bar">
+      <div class="marina_points_etapas">
+        <!-- COMPONENTE - ETAPAS DA MARINA POINTS -->
+        <div class="marina_points_etapa_ativa">
+          <div class="marina_points_circle">
+            <p class="subtitulo bold" style="color: var(--rosa-4);">1</p>
+          </div>
+          <div class="marina_points_conexao"></div>
         </div>
-        <div class="nav_institucional_coluna"> 
-          <button class="btn-branco paragrafo-2">Entrar</button>
-          <button class="btn-rosa paragrafo-2">Cadastre-se</button>
+        <!-- COMPONENTE - ETAPAS DA MARINA POINTS -->
+        <div class="marina_points_etapa_ativa">
+          <div class="marina_points_circle">
+            <p class="subtitulo bold" style="color: var(--rosa-4);">2</p>
+          </div>
+          <div class="marina_points_conexao"></div>
         </div>
-      </nav>
+        <!-- COMPONENTE - ETAPAS DA MARINA POINTS -->
+        <div class="marina_points_etapa_inativa">
+          <div class="marina_points_circle">
+            <p class="subtitulo bold" style="color: var(--rosa-1);">3</p>
+          </div>
+          <div class="marina_points_conexao"></div>
+        </div>
+        <!-- COMPONENTE - ETAPAS DA MARINA POINTS -->
+        <div class="marina_points_etapa_inativa">
+          <div class="marina_points_circle">
+            <p class="subtitulo bold" style="color: var(--rosa-1);">4</p>
+          </div>
+          <div class="marina_points_conexao"></div>
+        </div>
+        <!-- COMPONENTE - ETAPAS DA MARINA POINTS -->
+        <div class="marina_points_etapa_inativa">
+          <div class="marina_points_circle">
+            <p class="subtitulo bold" style="color: var(--rosa-1);">5</p>
+          </div>
+          <div class="marina_points_conexao"></div>
+        </div>
+      </div>
+      <img src="../../assets/vector/icon_cupom/bootstrap/filled/tags-fill.svg" alt="icon-cupom">
+    </div>
+  </section>
 
 
 
+  <section class="catalogo_section_pai">
+    <p class="titulo-1">Agende um serviço!</p>
+    <div class="catalogo_section_lista">
 
-      <section class="principal_section">
-        <div class="home_session_pai">
-            <h2 class="super-titulo">Bem vinda de volta Juliana!</h2>
-            
-            <div class="conteudo_proximo_agendamento">
-              <span class="paragrafo-1">Você tem 1 horário marcado:</span>
-
-              <div class="card_proximo_agendamento">
-                <div class="conteudo">
-                  <p class="paragrafo-1"><b> Nome do serviço </b></p>
-                  <p class="paragrafo-1"> <img src="../../assets/vector/icon_horariio/ionicons/sharp/time-sharp.svg" alt="">  <b> 01/01/2000 00:00pm </b></p>
-                  <p class="paragrafo-1"> <b>Status:</b>  Confirmado</p>
-                </div>
-                <div class="botoes">
-                  <button class="btn-rosa">Reagendar</button>
-                  <button class="btn-branco ">Cancelar</button>
-                </div>
-              </div>
-
+      <!-- COMPONENTE - CARD SERVICO -->
+      <div class="catalogo_section_card shadow">
+        <div class="catalogo_section_title">
+          <p class="paragrafo-1 bold" style="color: var(--rosa-4);"">Nome do Serviço</p>
+        </div>
+        <div class="catalogo_section_conteudo">
+          <p class="paragrafo-2">
+            Breve descrição do serviço <br>
+            Breve descrição do serviço <br>
+            Breve descrição do serviço <br>
+            Breve descrição do serviço <br>
+          </p>
+          <div class="catalogo_section_infos">
+            <!-- COMPONENTE - ESTRELAS -->
+            <div class="estrelas">
+              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
+              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
+              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
+              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
+              <img src="../../assets/svg/icon_star_filled.svg" alt="star-preenchida">
             </div>
 
-            <a class="hist_agendamento paragrafo-2"> <img src="../../assets/svg/arrow-back.svg" alt="">Histórico de Agendamentos</a>
+            <div class="info">
+              <img src="../../assets/vector/icon_horariio/ionicons/sharp/time-sharp.svg" alt="icon-horario">
+              <p class="paragrafo-2">Tempo de atendimento: 10min</p>
+            </div>
+            <div class="info">
+              <img src="../../assets/vector/icon_dinheiro/ionicons/sharp/cash-sharp.svg" alt="icon-dinheiro">
+              <p class="paragrafo-2">A partir de R$000,00</p>
+            </div>
+            <button class="btn-rosa"><img src="../../assets/vector/icon_sum/jam-icons/outline & logos/Vector.svg" alt=" icon-sum">Agendar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        </div> 
-      </section>
+  </section>
+  <!-- COMPONENTE FOOTER -->
+  <footer class="footer_pai">
+    <div class="footer_linha1">
+      <img src="../../assets/svg/logo_white.svg" alt="logo" style="height: 45px;">
+      <div class="footer_linha1_social">
+        <img src="../../assets/svg/icon_facebook.svg" alt="icon-social">
+        <img src="../../assets/svg/icon_instagram3.svg" alt="icon-social">
+        <img src="../../assets/svg/icon_linkedin.svg" alt="icon-social">
+      </div>
+    </div>
+    <div class="footer_linha2"></div>
+    <p class="paragrafo-2" style="color: var(--rosa-4);">@Copyright2025 Todos os direitos reservados.</p>
+  </footer>
 
-   
-  </body>
+
+</body>
 
 </html>
 <script>

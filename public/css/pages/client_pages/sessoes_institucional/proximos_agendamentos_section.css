@@ -1,21 +1,23 @@
-.home_session_pai{
+.home_session_pai {
+    height: 640px;
     padding-top: 160px;
+    padding-bottom: 80px;
     display: flex;
     flex-direction: column;
 
-    h2{
+    h2 {
         margin-bottom: 40px;
     }
 }
 
 
-.conteudo_proximo_agendamento{
+.conteudo_proximo_agendamento {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-.card_proximo_agendamento{
+.card_proximo_agendamento {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,14 +25,14 @@
     max-height: 186px;
     height: auto;
     width: auto;
+
     border-radius: 32px;
     background-color: #ffffff;
     padding: 40px 30px;
     border: 1px solid;
-    border-color: #c2c2c2;
-    box-shadow: -4px 4px 10px 0px #211F1E14;
+    border-color: var(--cinza-2);
 
-    .botoes{
+    /* .botoes{
 
         button{
             padding: 30px 50px;
@@ -38,21 +40,25 @@
 
         }
 
+    } */
+    button {
+        height: 50px;
+        width: 180px;
     }
 
-    .conteudo{
+    .conteudo {
         display: flex;
         flex-direction: column;
         gap: 10px;
         width: 100%;
 
-        img{
+        img {
             width: 7%;
         }
 
     }
 
-    .conteudo p{
+    /* .conteudo p{
         display: flex;
         font-family: 'Poppins', sans-serif;
         align-items: center;
@@ -63,13 +69,13 @@
         height: auto;
         display: flex;
         flex-direction: column;
-    }
+    } */
 
 
 }
 
 
-.hist_agendamento{
+.hist_agendamento {
     color: var(--rosa-1);
     font-family: p;
     font-weight: 600;
