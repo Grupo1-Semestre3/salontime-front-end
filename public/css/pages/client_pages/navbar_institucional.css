@@ -10,7 +10,7 @@
     
     padding: 10px 80px 10px 80px;
     /* background-color: var(--rosa-3); */
-    background-color: rgba(255, 250, 252, 0.85); /* rosa-3 com transparência */
+    background-color: rgba(255, 255, 255, 0.85); /* rosa-3 com transparência */
     border-bottom: var(--rosa-2) 1px solid;
     backdrop-filter: blur(10px); 
 

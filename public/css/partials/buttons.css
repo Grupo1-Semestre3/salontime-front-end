@@ -73,6 +73,40 @@
   color: var(--rosa-4);
 }
 
+.btn-navbar {
+  width: 100%;
+  height: auto;
+  min-height: 48px;
+  max-width: 224px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+
+  padding: 12px 8px 12px 8px;
+  gap: 8px;
+  border-radius: 16px;
+  border: var(--rosa-2) 1px solid;
+}
+
+.btn-sair {
+  width: 100%;
+  height: auto;
+  min-height: 48px;
+  max-width: 224px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+
+  padding: 12px 8px 12px 8px;
+  gap: 8px;
+  border-radius: 16px;
+  /* border: var(--rosa-2) 1px solid; */
+}
+
 
 
 .btn-rosa:hover {
@@ -95,4 +129,14 @@
 .btn-vermelho:hover {
   background: #8a0007;
   /* vermelho mais escuro */
+}
+
+.btn-navbar:hover {
+  background: var(--rosa-2);
+  /* rosa-2 suave */
+}
+
+.btn-sair:hover {
+  background: var(--rosa-2);
+  /* rosa-2 suave */
 }
