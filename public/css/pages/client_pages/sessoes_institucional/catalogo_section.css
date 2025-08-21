@@ -10,6 +10,14 @@
     height: auto;
 }
 
+.catalogo_section_lista{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-auto-rows: auto;
+  gap: 16px; 
+  padding: 16px;
+}
+
 .catalogo_section_list {
     display: flex;
     flex-direction: row;
