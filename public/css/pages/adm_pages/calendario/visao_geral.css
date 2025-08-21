@@ -1,0 +1,11 @@
+
+/* Tirando cor padrão layout */
+
+.dash_section_filho,
+.dash_section_container{
+    background-color: var(--cinza-2) !important;
+}
+
+.card_proximo_atendimento{
+    background-color: var(--rosa-4);
+}
