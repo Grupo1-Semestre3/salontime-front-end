@@ -4,6 +4,8 @@
 @import url(./partials/buttons.css);
 @import url(./partials/utils.css);
 
+
+
 /* --- IMPORTANDO AS PÁGINAS CLIENTE --- */
 /* Configurações */
 @import url(./pages/client_pages/configuracoes/cupons.css);
@@ -27,6 +29,8 @@
 @import url(./pages/client_pages/login.css);
 @import url(./pages/client_pages/navbar_institucional.css);
 
+
+
 /* --- IMPORTANDO AS PÁGINAS ADM --- */
 /* Calendário */
 @import url(./pages/adm_pages/calendario/atendimentos_passados.css);
@@ -44,8 +48,7 @@
 @import url(./pages/adm_pages/usuarios/funcionarios.css);
 /* Outras páginas ADM */
 @import url(./pages/adm_pages/login.css);
-@import url(./pages/adm_pages/navbar_dashboard.css);
-@import url(./pages/adm_pages/navbar_mini_sections.css);
+@import url(./pages/adm_pages/layout_dashboard.css);
 @import url(./pages/adm_pages/perfil.css);
 
 *,
