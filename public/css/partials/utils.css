@@ -29,7 +29,17 @@
   /* padrao de input - para todas as paginas */
 }
 
-
+.select {
+  width: 155px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--rosa-1);
+  border: none;
+  border-radius: 32px;
+  color: var(--rosa-4);
+  padding: 0px 10px 0px 10px;
+}
 
 .btn-juntos {
   display: flex;
