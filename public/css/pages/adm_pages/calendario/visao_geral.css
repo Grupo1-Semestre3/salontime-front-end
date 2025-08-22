@@ -12,6 +12,7 @@
     display: flex;
     gap: 5%;
     align-self: flex-start;
+    width: 100%;
 }
 .calendario_card_proximo_atendimento{
     background-color: var(--rosa-4);
