@@ -1,10 +1,12 @@
 
 /* Tirando cor padrão layout */
 
-.dash_section_filho,
+/* .dash_section_filho,
 .dash_section_container{
     background-color: var(--cinza-2) !important;
-}
+} */
+
+/* ajustei no pai a cor :) */
 
 .card_proximo_atendimento{
     background-color: var(--rosa-4);
