@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/main.css" />
     <link rel="shortcut icon" href="../../assets/svg/logo_rosa.svg" type="image/x-icon" />
-    <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_AQUI"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <title>Salon Time | Controle Serviços</title>
 </head>
 
 <body>
-    <dev class="dash_section_pai">
+    <div class="dash_section_pai">
         <!-- COMPONENTE - NAVBAR LATERAL -->
         <div class="dash_navbar_pai">
             <div class="dash_navbar_filho">
@@ -34,7 +35,7 @@
             </div>
 
         </div>
-        <div class="dash_section_filho" >
+        <div class="dash_section_filho">
             <div class="section_controle_servico_title">
                 <p class="titulo-1">Mês Selecionado</p>
 
@@ -64,7 +65,8 @@
                     <p class="paragrafo-2 italic">Atendimentos Cancelados</p>
                     <div class="section_controle_servico_kpis_card_column">
                         <p class="paragrafo-1 semibold">75</p>
-                        <p class="paragrafo-2 section_controle_servico_kpis_card_value" style="background-color: var(--vermelho);">+1%</p>
+                        <p class="paragrafo-2 section_controle_servico_kpis_card_value"
+                            style="background-color: var(--vermelho);">+1%</p>
                     </div>
                 </div>
 
@@ -86,6 +88,102 @@
             </div>
 
             <div class="section_controle_servico_grafico card">
+                <p class="paragrafo-2 semibold">Atendimentos por Dia</p>
+                <canvas id="atendimentosChart" style=" display: flex; width: 100%; height: 100%;"></canvas>
+            </div>
+
+            <div class="section_controle_servico_line2">
+                <div class="section_controle_servico_column_pai card"></div>
+                <div class="section_controle_servico_column_pai card"></div>
 
             </div>
         </div>
+
+    </div>
+</body>
+
+<script>
+    // Função para gerar labels de todos os dias do mês atual (mock: 31 dias)
+    const diasMes = Array.from({ length: 31 }, (_, i) => `${(i+1).toString().padStart(2, '0')}/01`);
+
+    // Mock: atendimentos mês atual
+    const mesAtual = [
+      250, 280, 320, 350, 380, 400, 370,
+      330, 340, 360, 470, 480, 450, 430,
+      390, 410, 600, 620, 590, 570, 530,
+      510, 500, 480, 450, 400, 420, 550,
+      600, 700, 750
+    ];
+
+    // Mock: atendimentos mês anterior (30 dias, note que no label temos 31)
+    const mesAnterior = [
+      200, 350, 400, 450, 500, 520, 510,
+      530, 550, 500, 520, 560, 540, 530,
+      520, 580, 600, 610, 590, 570, 550,
+      540, 500, 490, 460, 420, 580, 620,
+      700, 800, null // último dia null para alinhar
+    ];
+
+    const ctx = document.getElementById('atendimentosChart').getContext('2d');
+    const atendimentosChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: diasMes,
+        datasets: [
+          {
+            label: 'Mês selecionado',
+            data: mesAtual,
+            borderColor: 'black',
+            backgroundColor: '#211F1E',
+            fill: false,
+            pointBackgroundColor: 'black',
+            tension: 0.3
+          },
+          {
+            label: 'Mês anterior',
+            data: mesAnterior,
+            borderColor: 'lightgray',
+            backgroundColor: 'D7D7D7',
+            fill: false,
+            pointBackgroundColor: 'lightgray',
+            tension: 0.3
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+        //   title: {
+        //     display: true,
+        //     text: 'Atendimentos por Dia'
+        //   },
+          legend: {
+            labels: {
+              usePointStyle: true,
+              pointStyle: 'circle'
+            }
+          }
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Dia do mês'
+            },
+            ticks: {
+              maxRotation: 30, // ângulo máximo
+              minRotation: 30  // ângulo mínimo
+            }
+          },
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Número de atendimentos'
+            }
+          }
+        }
+      }
+    });
+  </script>
+</html>
