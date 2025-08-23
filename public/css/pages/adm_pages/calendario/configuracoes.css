@@ -1,0 +1,57 @@
+.configuracao_line_box {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    & p{
+        width: 100%;
+    }
+
+    & .configuracao_button {
+        background-color: var(--verde);
+        padding: 16px 34px;
+        color: var(--rosa-4);
+        border-radius: 16px;
+    }
+
+    & .configuracao_box_info{
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        width: 100%;
+
+        & .configuracao_capacidade_box{
+            display: flex;
+            align-items: center;
+        }
+
+        & .configuracao_horarios_box{
+           display: flex;
+            gap: 12%;
+            max-width: 280px;
+            width: 100%;
+            background: var(--rosa-4);
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            
+            & .configuracao_seta_cinza_box{
+                background-color: #c2c2c2;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 17%;
+            }
+
+            & .configuracao_horario_mini_box{
+                display: flex;
+                align-items: center;
+            }
+
+        }
+
+    }
+
+}
