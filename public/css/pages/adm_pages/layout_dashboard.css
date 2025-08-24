@@ -85,11 +85,18 @@
     border-bottom: 0.3px solid var(--marrom-1);
 }
 
-.mini_nav_filho_ativo{
+.mini_nav_filho{
     display: flex;
     width: auto;
     height: auto;
     /* border-bottom: 2px solid var(--marrom-1); */
+}
+
+.mini_nav_filho:hover{
+    display: flex;
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid var(--marrom-1);
 }
 
 .mini_nav_filho_ativo{
@@ -116,4 +123,3 @@
     gap: 24px;
     /* background-color: green; */
 }
-
