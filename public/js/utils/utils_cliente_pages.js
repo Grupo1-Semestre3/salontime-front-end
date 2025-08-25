@@ -1,10 +1,10 @@
 // Util - 1 - Redirecionar para página do botão.
-export function navegar(path) {
+function navegar(path) {
     window.location.href = path;
 }
 
 // Util - 2 - Formatar nome (Letra Maiúscula).
-export function formatarNomeInput(inputElement) {
+function formatarNomeInput(inputElement) {
   function nomeFormatado(value) {
     return value
       .trim()
@@ -27,7 +27,7 @@ export function formatarNomeInput(inputElement) {
 }
 
 // Util - 3 - Validar confirmação de senha.
-export function validarSenha(senha1, senha2) {
+function validarSenha(senha1, senha2) {
     if (senha1 = senha2) {
         return 'As senhas coincidem.'
     } else {
@@ -36,13 +36,13 @@ export function validarSenha(senha1, senha2) {
 }
 
 // Util - 4 - Chamar Pop Up
-export function abrirPopUp(elemento1, elemento2) {
+function abrirPopUp(elemento1, elemento2) {
     elemento1.style.display = 'none';
     elemento2.style.display = 'block';
 }
 
 // Util - 5 - Formatar CPF
-export function formatarCPFInput(inputElement) {
+function formatarCPFInput(inputElement) {
   function formatarCPF(value) {
     const cpf = value.replace(/\D/g, "");
     
