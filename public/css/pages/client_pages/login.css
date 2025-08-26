@@ -1,56 +1,74 @@
-
-.login{
+.login {
   display: flex;
   width: 100vw;
-  height: 800px;
+  height: 100vh;
 }
-
 
 .login__imagem {
   display: flex;
-  width:50%;
-  height: auto;
-  background-color: blue;
+  width: 50%;
+  height: 100%;
   background-size: cover;
 } 
 
+.login__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
 
-
-.login__form{
-
+.login__form {
   background-color: var(--rosa-4);
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding:20px 40px;
-  gap: 24px;
-  width:50%;
-  height: auto;  
-  
+  width: 50%;
+  padding-left: 100px;
+  padding-top: 150px;
+}
+
+.login__voltar {
+
+  display: flex;
+  color: var(--rosa-1);
+  font-size: 20px;
+  justify-content: start;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
 }
 
 
-.login__title{
+.login__title {
 
-  width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
 }
+
 
 .login__formulario {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  gap: 16px;
+  padding-top: 20px;
+  gap: 10px;
 }
 
 
+.login__form h1 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.login__form p {
+  margin-bottom: 20px;
+}
 
 .login form {
   display: flex;
@@ -66,12 +84,15 @@
   font-size: 16px;
 }
 
-.login__cadastro {
-  margin-top: 40px;
-  text-align: center;
-}
-
 .login__entrar {
   color: var(--rosa-1);
   font-weight: 600;
+}
+
+.linha-horizontal {
+  width: 100%;
+  height: 1px;
+  background-color:black; /* ou qualquer cor desejada */
+  border: none;
+  margin: 24px 0;
 }
