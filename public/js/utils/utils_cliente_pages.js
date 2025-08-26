@@ -62,3 +62,34 @@ function formatarCPFInput(inputElement) {
     }
   });
 }
+
+function verificarLogin() {
+    const status = localStorage.getItem('isLoggedIn');
+
+    const btn_entrar = document.getElementById('btn_entrar');
+    const btn_cadastrar = document.getElementById('btn_cadastrar');
+    const btn_config = document.getElementById('btn_perfil');
+
+    const section_home_servicos = document.getElementById('section_home_servicos');
+    const section_proximos_atendimentos = document.getElementById('section_proximos_atendimentos');
+    const section_marina_points = document.getElementById('section_marina_points');
+
+    if (status == 1) {
+        btn_config.style.display = 'flex';
+        section_proximos_atendimentos.style.display = 'flex';
+        section_marina_points.style.display = 'flex';
+    } else {
+        btn_entrar.style.display = 'flex';
+        btn_cadastrar.style.display = 'flex';
+        section_home_servicos.style.display = 'flex';
+    }
+}
+
+// export {
+//     navegar,
+//     formatarNomeInput,
+//     validarSenha,
+//     abrirPopUp,
+//     formatarCPFInput,
+//     verificarLogin
+// };

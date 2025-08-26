@@ -35,30 +35,38 @@
         </div>
         <div class="dash_section_filho">
 
-             <!-- COMPONENTE - MINI -->
-            <div class="menu_horizontal_calendario">
-                <p class="paragrafo-2">Visão Geral</p>
-                <p class="paragrafo-2">Atendimentos Passados</p>
-                <p class="paragrafo-2">Configurações</p>
+
+            <!-- COMPONENTE - MINI -->
+            <div class="mini_nav_pai">
+                <p class="paragrafo-2 mini_nav_filho_ativo">Visão Geral</p>
+                <p class="paragrafo-2 mini_nav_filho">Atendimentos Passados</p>
+                <p class="paragrafo-2 mini_nav_filho">Configurações</p>
             </div>
 
             <div class="dash_section_container">
                 <h1 class="supertitulo-1">Próximos atendimentos</h1>
             </div>
 
-            <div class="dash_section_container">
-                <div class="calendario_card_proximo_atendimento">
-                    <div class="calendario_info_box_card_proximo_atendimento">
-                        <p class="titulo-1">Nome da Cliente</p>
-                        <p class="subtitulo">Serviço: Luzes morena iluminada</p>
-                        <p class="subtitulo"><img src="../../assets/svg/time-sharp.svg" alt="">  dd/mm/yy 00:00</p>
-                    </div>
-                    <div class="calendario_buttons_box_card_proximo_atendimento">
-                        <button class="btn-rosa">Reagendar</button>
-                        <button class="btn-branco">Cancelar</button>
-                    </div>
+            <!-- <div class="dash_section_container"> -->
+            <div class="calendario_card_proximo_atendimento card">
+                <div class="calendario_info_box_card_proximo_atendimento">
+                    <p class="titulo-1">Nome da Cliente</p>
+                    <p class="subtitulo">Serviço: Luzes morena iluminada</p>
+                    <p class="subtitulo"><img src="../../assets/svg/time-sharp.svg" alt=""> dd/mm/yy 00:00</p>
+                </div>
+                <div class="calendario_buttons_box_card_proximo_atendimento">
+                    <button class="btn-rosa" style="height: 60px;">Reagendar</button>
+                    <button class="btn-branco" style="height: 60px;">Cancelar</button>
                 </div>
             </div>
-            
-            
+            <!-- </div> -->
+
+            <div class="div_section_calendar card"></div>
+
+            <div class="btn-juntos" style="flex-direction: row; width: 100%;">
+                <button class="btn-rosa" style="width: 100%;">Criar Agendamento</button>
+                <button class="btn-branco" style="width: 100%;">Criar Compromisso</button>
+            </div>
+
+
         </div>
