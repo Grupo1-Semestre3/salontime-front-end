@@ -1,134 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head> 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="shortcut icon" href="assets/svg/logo-white.svg" type="image/x-icon" />
-    <title>ServGuard | Cadastro</title>
-    <!-- IMPORTANDO A BIBLIOTECA DO SWEETALERT -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="shortcut icon" href="../../assets/svg/logo_rosa.svg" type="image/x-icon" />
+    <title>Salon Time | Cadastro</title>
+</head>
 
-    <!-- IMPORTANDO A ESTILIZAÇÃO DO SWEETALERT - THEME DARK -->
-    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-  </head>
-  <body>
-    <section id="page-cadastro">
-      <main class="father-cadastro">
-        <div class="child-card-form-cadastro">
-          <div class="card-form-cadastro mt-2">
-            <a class="logo-cadastro text-white" href="./index.html">
-              <img src="./assets/svg/logo-white.svg" alt="" />
-              <h3 class="bold">ServGuard</h3>
-            </a>
-            <form action="">
-              <div class="form-card-line-border mb-1">
-                <div class="form-titulo-cadastro my-3">
-                  <h3 class="text-white mb-1">Comece a usar a ServGuard</h3>
-                  <p class="text-gray">
-                    Cadastre-se agora e acesse nossa plataforma completa de
-                    monitoramento e gestão para sua empresa.
-                  </p>
-                </div>
 
-                <div class="formContainer">
-                  <input
-                    placeholder="Digite seu nome"
-                    type="text"
-                    id="nome_usuario"
-                    name="nome_usuario"
-                    required
-                    autocomplete="off"
-                  />
-                  <label class="text-white" for="nome">Nome</label>
-                </div>
-                <div class="formContainer">
-                  <input
-                    placeholder="example@email.com"
-                    type="text"
-                    id="email_usuario"
-                    name="email_usuario"
-                    required
-                    autocomplete="off"
-                  />
-                  <label class="text-white" for="email">Email</label>
-                </div>
-                <div class="formContainer">
-                  <input
-                    placeholder="Digite o nome da empresa"
-                    type="text"
-                    id="nome_empresa"
-                    name="nome_empresa"
-                    required
-                    autocomplete="off"
-                  />
-                  <label class="text-white" for="nome_empresa"
-                    >Nome da Empresa</label
-                  >
-                </div>
-                <div class="formContainer">
-                  <input
-                    placeholder="Digite o CNPJ da empresa"
-                    type="number"
-                    id="cnpj"
-                    name="cnpj"
-                    required
-                    autocomplete="off"
-                  />
-                  <label class="text-white" for="cnpj">CNPJ</label>
-                </div>
-                <div class="formContainer">
-                  <input
-                    placeholder="Digite sua senha"
-                    type="password"
-                    id="senha_usuario"
-                    name="senha_usuario"
-                    required
-                    autocomplete="off"
-                  />
-                  <label class="text-white" for="senha">Senha</label>
-                </div>
-                <div class="formContainer">
-                  <input
-                    placeholder="Digite sua senha"
-                    type="password"
-                    id="confirmar_senha"
-                    name="confirmar_senha"
-                    required
-                    autocomplete="off"
-                  />
-                  <label class="text-white" for="confirmar_senha"
-                    >Confirme a Senha</label
-                  >
-                </div>
+<body>
+  <div class="cadastro">
+    <!-- Coluna esquerda -->
+    <div class="cadastro__imagem">
+      <img src="../../assets/img/logincadastro.png" alt="" style="width: 100%;height: 100%;">
+    </div>
 
-                <button class="btnServGuard mt-2" onclick="cadastraEmpresa()">
-                  Cadastre-se
-                </button>
+    <!-- Coluna direita (formulário) -->  
+    <div class="cadastro__form">
+      <button href="#" class="cadastro__voltar">← Voltar</button>
 
-                <p class="text-gray little-text center">
-                  Já tem uma conta?
-                  <a class="text-purple little-text" href="./login.html">
-                    Entrar
-                  </a>
-                </p>
-              </div>
-            </form>
-          </div>
+      <div class="cadastro__title">
+        <h1 class="titulo-1">Bem vinda(o)!</h1>
+        <p class="paragrafo-1 semibold">Preencha os campos para se cadastrar.</p>
+      </div>
+
+
+      <div class="cadastro__formulario">
+        <div class="input_pai">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" class="input" placeholder="Placeholder">
         </div>
-        <div class="child-card-image-cadastro">
-          <figure>
-            <h3 class="text-white mb-1">Sua Central de Controle</h3>
-            <p class="text-gray">
-              Monitore e gerencie suas operações com eficiência em um só lugar.
-            </p>
-          </figure>
+
+        <div class="input_pai">
+          <label for="email">Endereço de e-mail</label>
+          <input type="email" id="email" class="input" placeholder="Placeholder">
         </div>
-      </main>
-    </section>
-  </body>
+
+        <div class="input_pai">
+          <label for="telefone">Número de telefone</label>
+          <input type="tel" id="telefone" class="input" placeholder="Placeholder">
+        </div>
+
+        <div class="input_pai">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" class="input" placeholder="Placeholder">
+        </div>
+
+        <div class="input_pai">
+          <label for="confirmar">Confirmar senha</label>
+          <input type="password" id="confirmar" class="input" placeholder="Placeholder">
+        </div>
+
+        <button type="submit" class="btn-rosa cadastro__btn">Cadastrar</button>
+      </div class="cadastro__formulario">
+
+      <div class="cadastro__login">
+        <p class="paragrafo-2">Já possui uma conta?
+          <button href="#" class="cadastro__entrar">Entrar</button>
+        </p>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+</body>
+
 </html>
+
 
 <script>
   function cadastraEmpresa() {
@@ -210,11 +150,11 @@
         } else {
           Swal.fire({
             icon: "error",
-          title: "Oops...",
-          color: '#fff',
-          text: "Houve um erro ao tentar realizar o cadastro, verifique o CNPJ!",
-          background: '#1d1d1d',
-          confirmButtonColor: '#4E2E9E',
+            title: "Oops...",
+            color: '#fff',
+            text: "Houve um erro ao tentar realizar o cadastro, verifique o CNPJ!",
+            background: '#1d1d1d',
+            confirmButtonColor: '#4E2E9E',
           });
         }
       })

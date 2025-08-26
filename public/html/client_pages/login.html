@@ -1,73 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="shortcut icon" href="assets/svg/logo-white.svg" type="image/x-icon" />
-  <title>ServGuard | Login</title>
-  <!-- IMPORTANDO A BIBLIOTECA DO SWEETALERT -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-  <!-- IMPORTANDO A ESTILIZAÇÃO DO SWEETALERT - THEME DARK -->
-  <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="shortcut icon" href="../../assets/svg/logo_rosa.svg" type="image/x-icon" />
+    <title>Salon Time | Login </title>
 </head>
 
 <body>
-  <section id="page-cadastro">
-    <main class="father-cadastro">
-      <div class="child-card-form-cadastro">
-        <div class="card-form-cadastro">
-          <a class="logo-cadastro text-white mt-2" href="./index.html">
-            <img src="./assets/svg/logo-white.svg" alt="" />
-            <h3 class="bold">ServGuard</h3>
-          </a>
+  <div class="login">
+    <!-- Coluna esquerda -->
+    <div class="cadastro__imagem">
+      <img src="../../assets/img/logincadastro.png" alt="" style="width: 100%;height: 100%;">
+    </div>
 
-          <form action="">
-            <div class="form-card-line-border mb-1">
-              <div class="form-titulo-cadastro my-3">
-                <h3 class="text-white mb-1">Bem vindo de volta!</h3>
-                <p class="text-gray">
-                  Faça login abaixo para continuar acessando a dashboard.
-                </p>
-              </div>
-              <div class="formContainer mb-2">
-                <input placeholder="example@email.com" type="text" id="email_usuario" name="email_usuario" required
-                  autocomplete="off" />
-                <label class="text-white" for="email">Email</label>
-              </div>
-              <div class="formContainer">
-                <input placeholder="Digite sua senha" type="password" id="senha_usuario" name="senha_usuario" required
-                  autocomplete="off" />
-                <label class="text-white" for="senha">Senha</label>
-              </div>
+    <!-- Coluna direita (formulário) -->  
+    <div class="cadastro__form">
+      <button href="#" class="cadastro__voltar">← Voltar</button>
 
-              <button class="btnServGuard mt-3" onclick="logar()">
-                Entrar
-              </button>
+      <div class="cadastro__title">
+        <h1 class="titulo-1">Bem vinda(o) de volta!</h1>
+      </div>
 
-              <p class="text-gray little-text center">
-                Não tem uma conta?
-                <a class="text-purple little-text" href="./cadastro.html">
-                  Cadastre-se
-                </a>
-              </p>
-            </div>
-          </form>
+        <div class="input_pai">
+          <label for="email">Endereço de e-mail</label>
+          <input type="email" id="email" class="input" placeholder="Placeholder">
         </div>
+
+        <div class="input_pai">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" class="input" placeholder="Placeholder">
+        </div>
+
+        <div class="input_pai">
+          <label for="confirmar">Confirmar senha</label>
+          <input type="password" id="confirmar" class="input" placeholder="Placeholder">
+        </div>
+
+        <button type="submit" class="btn-rosa login__btn">Entrar</button>
+
+        <div class="login__cadastro">
+        <p class="paragrafo-2">Não tem uma conta?
+          <button href="#" class="cadastro__entrar">Cadastre-se</button>
+        </p>
       </div>
-      <div class="child-card-image-cadastro">
-        <figure>
-          <h3 class="text-white mb-1">Sua Central de Controle</h3>
-          <p class="text-gray">
-            Monitore e gerencie suas operações com eficiência em um só lugar.
-          </p>
-        </figure>
-      </div>
-    </main>
-  </section>
+      </div class="login__formulario">
+
+      
+      
+    </div>
+  </div>
+  </div>
 </body>
 
 </html>
