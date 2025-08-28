@@ -4,6 +4,7 @@
 <head> 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../../js/api/cliente/cliente.js"></script>
     <link rel="stylesheet" href="../../css/main.css" />
     <link rel="shortcut icon" href="../../assets/svg/logo_rosa.svg" type="image/x-icon" />
     <title>Salon Time | Cadastro</title>
@@ -30,30 +31,30 @@
       <div class="cadastro__formulario">
         <div class="input_pai">
           <label for="nome">Nome completo</label>
-          <input type="text" id="nome" class="input" placeholder="Placeholder">
+          <input type="text" id="cadastro_form_nome" class="input" placeholder="Digite seu nome">
         </div>
 
         <div class="input_pai">
           <label for="email">Endereço de e-mail</label>
-          <input type="email" id="email" class="input" placeholder="Placeholder">
+          <input type="email" id="cadastro_form_email" class="input" placeholder="Digite seu email">
         </div>
 
         <div class="input_pai">
           <label for="telefone">Número de telefone</label>
-          <input type="tel" id="telefone" class="input" placeholder="Placeholder">
+          <input type="tel" id="cadastro_form_telefone" class="input" placeholder="Diigte seu número de telefone">
         </div>
 
         <div class="input_pai">
           <label for="senha">Senha</label>
-          <input type="password" id="senha" class="input" placeholder="Placeholder">
+          <input type="password" id="cadastro_form_senha" class="input" placeholder="Digite sua senha">
         </div>
 
         <div class="input_pai">
           <label for="confirmar">Confirmar senha</label>
-          <input type="password" id="confirmar" class="input" placeholder="Placeholder">
+          <input type="password" id="cadastro_form_confirmar" class="input" placeholder="Digite sua senha novamente">
         </div>
 
-        <button type="submit" class="btn-rosa cadastro__btn">Cadastrar</button>
+        <button type="submit" onclick="cadastrarCliente()" class="btn-rosa cadastro__btn">Cadastrar</button>
 
         <div class="linha-horizontal"></div>
         

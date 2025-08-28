@@ -66,6 +66,62 @@ function listar() {
 
 }
 
+
+
+function cadastrarCliente(){
+
+  const nome = document.getElementById("cadastro_form_nome").value;
+  const email = document.getElementById("cadastro_form_email").value;
+  const telefone = document.getElementById("cadastro_form_telefone").value;
+  const senha = document.getElementById("cadastro_form_senha").value;
+  const senhaConfirmar = document.getElementById("cadastro_form_confirmar").value;
+
+  fetch("http://localhost:8080/usuarios/cadastro", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ nome, email, senha, telefone })
+  })
+    .then(resposta => resposta.json())
+    .then(
+
+      loginComParametroPosCad(email, senha)
+
+    )
+    .catch(erro => {
+      console.error("Erro no login:", erro);
+    });
+
+}
+
+function loginComParametroPosCad(email, senha) {
+
+  fetch("http://localhost:8080/usuarios/login", {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ email, senha })
+  })
+    .then(resposta => resposta.json())
+    .then(dados => {
+      if (dados) {
+
+        sessionStorage.setItem("usuario", JSON.stringify(dados));
+
+        window.location.href = "/public/html/adm_pages/calendario_visao_geral.html";
+
+      } else {
+        alert("E-mail ou senha inválidos.");
+      }
+    })
+    .catch(erro => {
+      console.error("Erro no login:", erro);
+    });
+}
+
+
 function login() {
   const email = document.getElementById("email").value;
   const senha = document.getElementById("senha").value;
@@ -113,9 +169,6 @@ function logout() {
     .catch(erro => {
       console.error("Erro no login:", erro);
     });
-
-
-
 
 
 }
