@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../css/main.css" />
+  <script src="../../js/api/cliente/cliente.js"></script>
   <link rel="shortcut icon" href="../../assets/svg/logo_rosa.svg" type="image/x-icon" />
   <title>Salon Time | Serviços</title>
 </head>
 
-<body>
+<body onload="listar()">
 
 
   <nav class="nav_institucional_pai">
@@ -116,9 +117,9 @@
 
   <section class="catalogo_section_pai">
     <p class="titulo-1">Agende um serviço!</p>
-    <div class="catalogo_section_lista">
-
-      <!-- COMPONENTE - CARD SERVICO -->
+    <div id="catalogo_section_lista" class="catalogo_section_lista">
+    <!-- COMPONENTE CARD
+      
       <div class="catalogo_section_card shadow">
         <div class="catalogo_section_title">
           <p class="paragrafo-1 bold" style="color: var(--rosa-4);"">Nome do Serviço</p>
@@ -131,112 +132,7 @@
             Breve descrição do serviço <br>
           </p>
           <div class="catalogo_section_infos">
-            <!-- COMPONENTE - ESTRELAS -->
-            <div class="estrelas">
-              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
-              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
-              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
-              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
-              <img src="../../assets/svg/icon_star_filled.svg" alt="star-preenchida">
-            </div>
-
-            <div class="info">
-              <img src="../../assets/vector/icon_horariio/ionicons/sharp/time-sharp.svg" alt="icon-horario">
-              <p class="paragrafo-2">Tempo de atendimento: 10min</p>
-            </div>
-            <div class="info">
-              <img src="../../assets/vector/icon_dinheiro/ionicons/sharp/cash-sharp.svg" alt="icon-dinheiro">
-              <p class="paragrafo-2">A partir de R$000,00</p>
-            </div>
-            <button class="btn-rosa"><img src="../../assets/vector/icon_sum/jam-icons/outline & logos/Vector.svg" alt=" icon-sum">Agendar</button>
-          </div>
-        </div>
-      </div>
-
-            <!-- COMPONENTE - CARD SERVICO -->
-      <div class="catalogo_section_card shadow">
-        <div class="catalogo_section_title">
-          <p class="paragrafo-1 bold" style="color: var(--rosa-4);"">Nome do Serviço</p>
-        </div>
-        <div class="catalogo_section_conteudo">
-          <p class="paragrafo-2">
-            Breve descrição do serviço <br>
-            Breve descrição do serviço <br>
-            Breve descrição do serviço <br>
-            Breve descrição do serviço <br>
-          </p>
-          <div class="catalogo_section_infos">
-            <!-- COMPONENTE - ESTRELAS -->
-            <div class="estrelas">
-              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
-              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
-              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
-              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
-              <img src="../../assets/svg/icon_star_filled.svg" alt="star-preenchida">
-            </div>
-
-            <div class="info">
-              <img src="../../assets/vector/icon_horariio/ionicons/sharp/time-sharp.svg" alt="icon-horario">
-              <p class="paragrafo-2">Tempo de atendimento: 10min</p>
-            </div>
-            <div class="info">
-              <img src="../../assets/vector/icon_dinheiro/ionicons/sharp/cash-sharp.svg" alt="icon-dinheiro">
-              <p class="paragrafo-2">A partir de R$000,00</p>
-            </div>
-            <button class="btn-rosa"><img src="../../assets/vector/icon_sum/jam-icons/outline & logos/Vector.svg" alt=" icon-sum">Agendar</button>
-          </div>
-        </div>
-      </div>
-
-            <!-- COMPONENTE - CARD SERVICO -->
-      <div class="catalogo_section_card shadow">
-        <div class="catalogo_section_title">
-          <p class="paragrafo-1 bold" style="color: var(--rosa-4);"">Nome do Serviço</p>
-        </div>
-        <div class="catalogo_section_conteudo">
-          <p class="paragrafo-2">
-            Breve descrição do serviço <br>
-            Breve descrição do serviço <br>
-            Breve descrição do serviço <br>
-            Breve descrição do serviço <br>
-          </p>
-          <div class="catalogo_section_infos">
-            <!-- COMPONENTE - ESTRELAS -->
-            <div class="estrelas">
-              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
-              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
-              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
-              <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
-              <img src="../../assets/svg/icon_star_filled.svg" alt="star-preenchida">
-            </div>
-
-            <div class="info">
-              <img src="../../assets/vector/icon_horariio/ionicons/sharp/time-sharp.svg" alt="icon-horario">
-              <p class="paragrafo-2">Tempo de atendimento: 10min</p>
-            </div>
-            <div class="info">
-              <img src="../../assets/vector/icon_dinheiro/ionicons/sharp/cash-sharp.svg" alt="icon-dinheiro">
-              <p class="paragrafo-2">A partir de R$000,00</p>
-            </div>
-            <button class="btn-rosa"><img src="../../assets/vector/icon_sum/jam-icons/outline & logos/Vector.svg" alt=" icon-sum">Agendar</button>
-          </div>
-        </div>
-      </div>
-
-            <!-- COMPONENTE - CARD SERVICO -->
-      <div class="catalogo_section_card shadow">
-        <div class="catalogo_section_title">
-          <p class="paragrafo-1 bold" style="color: var(--rosa-4);"">Nome do Serviço</p>
-        </div>
-        <div class="catalogo_section_conteudo">
-          <p class="paragrafo-2">
-            Breve descrição do serviço <br>
-            Breve descrição do serviço <br>
-            Breve descrição do serviço <br>
-            Breve descrição do serviço <br>
-          </p>
-          <div class="catalogo_section_infos">
-            <!-- COMPONENTE - ESTRELAS -->
+            
             <div class="estrelas">
               <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
               <img src="../../assets/svg/icon_star_outline.svg" alt="star-preenchida">
@@ -259,6 +155,7 @@
       </div>
 
     </div>
+    -->
 
   </section>
   <!-- COMPONENTE FOOTER -->

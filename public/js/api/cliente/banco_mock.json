@@ -1,0 +1,85 @@
+{
+    "servicos": [
+        {
+            "id": 1,
+            "nome": "Corte de Cabelo Feminino",
+            "preco": 80.0,
+            "tempo": "01:00:00",
+            "status": "ATIVO",
+            "simultaneo": false,
+            "descricao": "Corte moderno com finalização e escova.",
+            "mediaAvaliacao": 1.1
+
+        },
+        {
+            "id": 2,
+            "nome": "Corte de Cabelo Masculino",
+            "preco": 45.0,
+            "tempo": "00:40:00",
+            "status": "ATIVO",
+            "simultaneo": true,
+            "descricao": "Corte masculino com lavagem e finalização.",
+            "mediaAvaliacao": 4.3
+        },
+        {
+            "id": 3,
+            "nome": "Coloração",
+            "preco": 150.0,
+            "tempo": "02:30:00",
+            "status": "ATIVO",
+            "simultaneo": false,
+            "descricao": "Coloração completa com tonalizante e hidratação.",
+            "mediaAvaliacao": 4.8
+        },
+        {
+            "id": 4,
+            "nome": "Manicure e Pedicure",
+            "preco": 70.0,
+            "tempo": "01:20:00",
+            "status": "ATIVO",
+            "simultaneo": true,
+            "descricao": "Cuidados completos para mãos e pés.",
+            "mediaAvaliacao": 4.6
+        },
+        {
+            "id": 5,
+            "nome": "Escova Progressiva",
+            "preco": 250.0,
+            "tempo": "03:00:00",
+            "status": "ATIVO",
+            "simultaneo": false,
+            "descricao": "Alisamento com escova progressiva de longa duração.",
+            "mediaAvaliacao": 4.0
+        },
+        {
+            "id": 6,
+            "nome": "Maquiagem Completa",
+            "preco": 120.0,
+            "tempo": "01:15:00",
+            "status": "INATIVO",
+            "simultaneo": false,
+            "descricao": "Maquiagem profissional para festas e eventos.",
+            "mediaAvaliacao": 4.9
+        },
+        {
+            "id": 7,
+            "nome": "Hidratação Capilar",
+            "preco": 90.0,
+            "tempo": "01:10:00",
+            "status": "ATIVO",
+            "simultaneo": true,
+            "descricao": "Tratamento de hidratação profunda para os fios.",
+            "mediaAvaliacao": 4.3
+        },
+        {
+            "id": 8,
+            "nome": "Sobrancelha Design",
+            "preco": 35.0,
+            "tempo": "00:30:00",
+            "status": "ATIVO",
+            "simultaneo": true,
+            "descricao": "Design personalizado de sobrancelhas.",
+            "mediaAvaliacao": 4.8
+        }
+    ]
+}
