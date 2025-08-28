@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/utils/utils_cliente_pages.js"></script>
     <link rel="shortcut icon" href="../../assets/svg/logo_rosa.svg" type="image/x-icon" />
     <title>Salon Time | Perfil</title>
 </head>
@@ -14,35 +15,38 @@
     <!-- NAVBAR INSTITUCIONAL -->
     <nav class="nav_institucional_pai">
         <div class="nav_institucional_coluna">
-            <p class="paragrafo-2 underline-hover">Página Inicial</p>
-            <p class="paragrafo-2 underline-hover">Serviços</p>
+            <p class="paragrafo-2 underline-hover" onclick="navegar('./index.html')">Página Inicial</p>
+            <p class="paragrafo-2 underline-hover" onclick="navegar('./servicos.html')">Serviços</p>
         </div>
         <div class="nav_institucional_coluna">
             <img src="../../assets/svg/logo_black.svg" alt="logo" style="height: 50px;">
         </div>
         <div class="nav_institucional_coluna">
-            <button class="btn-branco">Entrar</button>
-            <button class="btn-rosa">Cadastre-se</button>
+            <button class="btn-branco" onclick="navegar('./login.html')">Entrar</button>
+            <button class="btn-rosa" onclick="navegar('./cadastro.html')">Cadastre-se</button>
         </div>
     </nav>
 
     <dev class="config_section_pai">
-        <!-- COMPONENTE - NAVBAR LATERAL -->
+       <!-- COMPONENTE - NAVBAR LATERAL -->
         <div class="config_navbar_pai">
             <div class="config_navbar_filho">
                 <div class="config_navbar_column">
-                    <button class="btn-navbar"><img style="max-width: 24px;"
-                            src="../../assets/svg/nav_config/icon_home.svg" alt="">Perfil</button>
-                    <button class="btn-navbar-ativo"><img style="max-width: 24px;"
-                            src="../../assets/svg/nav_config/icon_folders.svg" alt="">Meu Histórico</button>
-                    <button class="btn-navbar"><img style="max-width: 24px;"
-                            src="../../assets/svg/nav_config/icon_cupom.svg" alt="">CUPONS</button>
+                    <button class="btn-navbar" onclick="navegar('./config_perfil.html')">
+                            <img style="max-width: 24px;" src="../../assets/svg/nav_config/icon_home.svg"
+                            alt="">Perfil</button>
+                    <button class="btn-navbar-ativo" onclick="navegar('./config_historico.html')">
+                            <img style="max-width: 24px;" src="../../assets/svg/nav_config/icon_folders.svg"
+                            alt="">Meu Histórico</button>
+                    <button class="btn-navbar" onclick="navegar('./config_cupons.html')">
+                            <img style="max-width: 24px;" src="../../assets/svg/nav_config/icon_cupom.svg"
+                            alt="">CUPONS</button>
                 </div>
-                <button class="btn-sair"><img style="max-width: 24px;" src="../../assets/svg/nav_config/icon_exit.svg"
+                <button onclick="logout()" class="btn-sair"><img style="max-width: 24px;" src="../../assets/svg/nav_config/icon_exit.svg"
                         alt="">Sair</button>
             </div>
-
         </div>
+
         <div class="config_section_filho">
             <div class="config_section_container">
                 <p class="titulo-1">Atendimentos passados:</p>

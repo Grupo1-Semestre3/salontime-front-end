@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../../css/main.css" />
   <script src="../../js/utils/utils_cliente_pages.js"></script>
   <link rel="shortcut icon" href="../../assets/svg/logo_rosa.svg" type="image/x-icon" />
-  <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_AQUI"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_AQUI"></script> -->
   <title>Salon Time | Página Inicial</title>
 </head>
 
@@ -39,8 +39,8 @@
           promoções temporárias imperdíveis!</p>
       </div>
       <div class="btn-juntos">
-        <button class="btn-rosa">Saiba Mais</button>
-        <button class="btn-branco">Serviços</button>
+        <button class="btn-rosa" onclick="navegar('./index.html')">Saiba Mais</button>
+        <button class="btn-branco" onclick="navegar('./servicos.html')">Serviços</button>
       </div>
     </div>
     <div class="home_section_img">
@@ -87,10 +87,12 @@
   <section class="portifolio_section_pai">
     <p class="paragrafo-2 italic portifolio_section_title">Um pouco do meu trabalho!</p>
     <img src="../../assets/img/portifolio_teste.png" alt="portifolio">
-    <button class="btn-rosa bold" style="height: 50px;">
-      <img src="../../assets/svg/icon_instagram.svg" alt="" style="height: 30px;">
-      Veja mais!
-    </button>
+    <a  href="https://www.instagram.com/marinamotahair/" target="_blank">
+      <button class="btn-rosa bold" style="height: 50px;">
+        <img src="../../assets/svg/icon_instagram.svg" alt="" style="height: 30px;">
+        Veja mais!
+      </button>
+    </a>
   </section>
 
   <!-- COMPONENTE - SOBRE MIM -->
@@ -112,8 +114,8 @@
         <img src="../../assets/svg/icon_instagram2.svg" alt="icon-insta">
         @marinamotahair
       </p>
-      <button class="btn-rosa">
-        <img src="../../assets/vector/icon_sum/jam-icons/outline & logos/Vector.svg" alt="">
+      <button class="btn-rosa" onclick="navegar('./servicos.html')">
+        <img src="../../assets/vector/icon_sum/jam-icons/outline & logos/Vector.svg" alt="" >
         Agendar
       </button>
     </div>
