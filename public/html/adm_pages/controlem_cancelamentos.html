@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/utils/utils_cliente_pages.js"></script>
     <link rel="shortcut icon" href="../../assets/svg/logo_rosa.svg" type="image/x-icon" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -19,19 +20,23 @@
                 <img src="../../assets/svg/logo_black.svg" alt="icone" style="max-width: 169px;">
                 <p class="paragrafo-e bold">Bem vinda Marina!</p>
                 <div class="dash_navbar_column">
-                    <button class="btn-navbar"><img style="max-width: 24px;"
-                            src="../../assets/svg/nav_dash/icon_house_outline.svg" alt="">Calendário</button>
-                    <button class="btn-navbar"><img style="max-width: 24px;"
-                            src="../../assets/svg/nav_dash/icon_tesoura_outline.svg" alt="">Serviços</button>
-                    <button class="btn-navbar"><img style="max-width: 24px;"
-                            src="../../assets/svg/nav_dash/icon_user_outline.svg" alt="">Usuários</button>
-                    <button class="btn-navbar-ativo"><img style="max-width: 24px;"
-                            src="../../assets/svg/nav_dash/icon_doc_filled.svg" alt="">Controle Mensal</button>
-                    <button class="btn-navbar"><img style="max-width: 24px;"
+                    <button class="btn-navbar" onclick="navegar('./calendario_visao_geral.html')"><img
+                            style="max-width: 24px;" src="../../assets/svg/nav_dash/icon_house_outline.svg"
+                            alt="">Calendário</button>
+                    <button class="btn-navbar" onclick="navegar('./servicos_servicos.html')"><img
+                            style="max-width: 24px;" src="../../assets/svg/nav_dash/icon_tesoura_outline.svg"
+                            alt="">Serviços</button>
+                    <button class="btn-navbar" onclick="navegar('./usuarios_clientes.html')"><img
+                            style="max-width: 24px;" src="../../assets/svg/nav_dash/icon_user_outline.svg"
+                            alt="">Usuários</button>
+                    <button class="btn-navbar-ativo" onclick="navegar('./controlem_servicos.html')"><img
+                            style="max-width: 24px;" src="../../assets/svg/nav_dash/icon_doc_filled.svg" alt="">Controle
+                        Mensal</button>
+                    <button class="btn-navbar" onclick="navegar('./perfil.html')"><img style="max-width: 24px;"
                             src="../../assets/svg/nav_dash/icon_smile_outline.svg" alt="">Perfil</button>
                 </div>
-                <button class="btn-sair"><img style="max-width: 24px;" src="../../assets/svg/nav_config/icon_exit.svg"
-                        alt="">Sair</button>
+                <button onclick="logout()" class="btn-sair"><img style="max-width: 24px;"
+                        src="../../assets/svg/nav_config/icon_exit.svg" alt="">Sair</button>
             </div>
         </div>
         <div class="dash_section_filho">
@@ -46,9 +51,10 @@
 
             <!-- COMPONENTE - MINI -->
             <div class="mini_nav_pai">
-                <p class="paragrafo-2 mini_nav_filho">Serviços</p>
-                <p class="paragrafo-2 mini_nav_filho_ativo">Cancelamentos</p>
-                <p class="paragrafo-2 mini_nav_filho">Avaliações</p>
+                <p class="paragrafo-2 mini_nav_filho" onclick="navegar('./controlem_servicos.html')">Serviços</p>
+                <p class="paragrafo-2 mini_nav_filho_ativo" onclick="navegar('./controlem_cancelamentos.html')">
+                    Cancelamentos</p>
+                <p class="paragrafo-2 mini_nav_filho" onclick="navegar('./controlem_avaliacoes.html')">Avaliações</p>
             </div>
 
             <div class="dash_lista_itens">
@@ -70,11 +76,11 @@
                             Descrição do motivo
                             Descrição do motivo
                             Descrição do motivo
-                             Descrição do motivo
                             Descrição do motivo
                             Descrição do motivo
                             Descrição do motivo
-                            
+                            Descrição do motivo
+
                         </p>
                     </div>
                 </div>

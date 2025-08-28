@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/utils/utils_cliente_pages.js"></script>
     <link rel="shortcut icon" href="../../assets/svg/logo_rosa.svg" type="image/x-icon" />
     <title>Salon Time | Perfil</title>
 </head>
@@ -17,20 +18,25 @@
                 <img src="../../assets/svg/logo_black.svg" alt="icone" style="max-width: 169px;">
                 <p class="paragrafo-e bold">Bem vinda Marina!</p>
                 <div class="dash_navbar_column">
-                    <button class="btn-navbar-ativo"><img style="max-width: 24px;"
-                            src="../../assets/svg/nav_dash/icon_house_filled.svg" alt="">Calendário</button>
-                    <button class="btn-navbar"><img style="max-width: 24px;"
-                            src="../../assets/svg/nav_dash/icon_tesoura_outline.svg" alt="">Serviços</button>
-                    <button class="btn-navbar"><img style="max-width: 24px;"
-                            src="../../assets/svg/nav_dash/icon_user_outline.svg" alt="">Usuários</button>
-                    <button class="btn-navbar"><img style="max-width: 24px;"
-                            src="../../assets/svg/nav_dash/icon_doc_outline.svg" alt="">Controle Mensal</button>
-                    <button class="btn-navbar"><img style="max-width: 24px;"
-                            src="../../assets/svg/nav_dash/icon_smile_outline.svg" alt="">Perfil</button>
+                    <button class="btn-navbar" onclick="navegar('./calendario_visao_geral.html')"><img
+                            style="max-width: 24px;" src="../../assets/svg/nav_dash/icon_house_outline.svg"
+                            alt="">Calendário</button>
+                    <button class="btn-navbar" onclick="navegar('./servicos_servicos.html')"><img
+                            style="max-width: 24px;" src="../../assets/svg/nav_dash/icon_tesoura_outline.svg"
+                            alt="">Serviços</button>
+                    <button class="btn-navbar" onclick="navegar('./usuarios_clientes.html')"><img
+                            style="max-width: 24px;" src="../../assets/svg/nav_dash/icon_user_outline.svg"
+                            alt="">Usuários</button>
+                    <button class="btn-navbar" onclick="navegar('./controlem_servicos.html')"><img
+                            style="max-width: 24px;" src="../../assets/svg/nav_dash/Icon_doc_outline.svg" alt="">Controle
+                        Mensal</button>
+                    <button class="btn-navbar-ativo" onclick="navegar('./perfil.html')"><img style="max-width: 24px;"
+                            src="../../assets/svg/nav_dash/icon_smile_filled.svg" alt="">Perfil</button>
                 </div>
-                <button class="btn-sair"><img style="max-width: 24px;" src="../../assets/svg/nav_config/icon_exit.svg"
-                        alt="">Sair</button>
+                <button onclick="logout()" class="btn-sair"><img style="max-width: 24px;"
+                        src="../../assets/svg/nav_config/icon_exit.svg" alt="">Sair</button>
             </div>
+        </div>
 
         </div>
         <div class="dash_section_filho">
@@ -108,19 +114,22 @@
                             <input id="inp_numero_salao_inp" placeholder="Digite o número do salão" type="text">
                         </div>
                     </div>
-                     <div class="perfil_label_inp_duplo_box perfil_meio_meio_box">
+                    <div class="perfil_label_inp_duplo_box perfil_meio_meio_box">
                         <div class="perfil_label_inp_duplo">
                             <label for="inp_cidade_salao_inp">Cidade</label>
-                            <input id="inp_cidade_salao_inp" placeholder="Digite a cidade onde o salão está" type="text">
+                            <input id="inp_cidade_salao_inp" placeholder="Digite a cidade onde o salão está"
+                                type="text">
                         </div>
                         <div class="perfil_label_inp_duplo">
                             <label for="inp_estado_salao_inp">Estado</label>
-                            <input id="inp_estado_salao_inp" placeholder="Digite o estado onde o salão está" type="text">
+                            <input id="inp_estado_salao_inp" placeholder="Digite o estado onde o salão está"
+                                type="text">
                         </div>
                     </div>
                     <div class="perfil_label_inp_box">
                         <label for="inp_complemento_salao_inp">Complemento</label>
-                        <input id="inp_complemento_salao_inp" placeholder="Digite o complemento do logradouro" type="text">
+                        <input id="inp_complemento_salao_inp" placeholder="Digite o complemento do logradouro"
+                            type="text">
                     </div>
                     <div class="perfil_label_inp_box">
                         <input class="btn-rosa" type="button" value="Atualizar">
