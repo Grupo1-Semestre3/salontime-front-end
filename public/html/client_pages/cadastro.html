@@ -4,8 +4,9 @@
 <head> 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="../../js/api/cliente/cliente.js"></script>
     <link rel="stylesheet" href="../../css/main.css" />
+    <script src="../../js/utils/utils_cliente_pages.js"></script>
+    <script src="../../js/api/cliente/cliente.js"></script>
     <link rel="shortcut icon" href="../../assets/svg/logo_rosa.svg" type="image/x-icon" />
     <title>Salon Time | Cadastro</title>
 </head>
@@ -20,7 +21,7 @@
 
     <!-- Coluna direita (formulário) -->  
     <div class="cadastro__form">
-      <button href="index.html" class="cadastro__voltar">← Voltar</button>
+      <button href="index.html" class="cadastro__voltar" onclick="navegar('./index.html')">← Voltar</button>
 
       <div class="cadastro__title">
         <h1 class="titulo-1">Bem vinda(o)!</h1>
@@ -62,7 +63,7 @@
 
       <div class="cadastro__login">
         <p class="paragrafo-2">Já possui uma conta?
-          <button href="login.html" class="cadastro__entrar">Entrar</button>
+          <button href="login.html" class="cadastro__entrar" onclick="navegar('./login.html')">Entrar</button>
         </p>
       </div>
       

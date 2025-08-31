@@ -16,7 +16,7 @@
   justify-content: center;
   width: 100%;
   height: auto;
-  background-color: red;
+  /* background-color: red; */
   /* Quando a input tiver um nome, a classe vai organizar o titulo com o campo de input */
 }
 
