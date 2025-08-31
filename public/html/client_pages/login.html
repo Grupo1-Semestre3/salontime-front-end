@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../css/main.css" />
+  <script src="../../js/utils/utils_cliente_pages.js"></script>
   <script src="../../js/api/cliente/cliente.js"></script>
   <link rel="shortcut icon" href="../../assets/svg/logo_rosa.svg" type="image/x-icon" />
   <title>Salon Time | Login </title>
@@ -19,7 +20,7 @@
 
 
     <div class="login__form">
-      <button href="index.html" class="login__voltar">← Voltar</button>
+      <button href="index.html" class="login__voltar paragrafo-2" onclick="navegar('./index.html')">← Voltar</button>
 
       <div class="login__title">
         <h1 class="titulo-1">Bem vinda(o) de volta!</h1>
@@ -36,7 +37,7 @@
           <input type="password" id="senha" class="input" placeholder="Placeholder">
         </div>
 
-        <button type="submit" onclick="login()" class="btn-rosa login__btn">Cadastrar</button>
+        <button type="submit" onclick="login()" class="btn-rosa login__btn">Entrar</button>
 
         <div class="linha-horizontal"></div>
 
@@ -45,7 +46,7 @@
 
       <div>
         <p class="paragrafo-2">Não tem uma conta?
-          <button href="cadastro.html" class="login__entrar">Cadastre-se</button>
+          <button href="cadastro.html" class="login__cadastro" onclick="navegar('./cadastro.html')">Cadastre-se</button>
         </p>
       </div>
 

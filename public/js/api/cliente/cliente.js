@@ -109,7 +109,7 @@ function loginComParametroPosCad(email, senha) {
       if (dados) {
 
         sessionStorage.setItem("usuario", JSON.stringify(dados));
-
+        localStorage.setItem('isLoggedIn', '1')
         window.location.href = "/public/html/adm_pages/calendario_visao_geral.html";
 
       } else {
@@ -138,6 +138,7 @@ function login() {
       if (dados) {
 
         sessionStorage.setItem("usuario", JSON.stringify(dados));
+        localStorage.setItem('isLoggedIn', '1')
 
         console.log("Usuário logado:", dados.nome);
 

@@ -74,22 +74,13 @@ function verificarLogin() {
     const section_proximos_atendimentos = document.getElementById('section_proximos_atendimentos');
     const section_marina_points = document.getElementById('section_marina_points');
 
-    if (status == 1) {
+    if (status == "1") {
+        btn_entrar.style.display = 'none';
+        btn_cadastrar.style.display = 'none';
+        section_home_servicos.style.display = 'none';
+
         btn_config.style.display = 'flex';
         section_proximos_atendimentos.style.display = 'flex';
         section_marina_points.style.display = 'flex';
-    } else {
-        btn_entrar.style.display = 'flex';
-        btn_cadastrar.style.display = 'flex';
-        section_home_servicos.style.display = 'flex';
     }
 }
-
-// export {
-//     navegar,
-//     formatarNomeInput,
-//     validarSenha,
-//     abrirPopUp,
-//     formatarCPFInput,
-//     verificarLogin
-// };

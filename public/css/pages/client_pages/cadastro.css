@@ -1,23 +1,24 @@
 .cadastro {
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
 }
 
 .cadastro__imagem {
   display: flex;
   width: 50%;
   height: 100%;
-  background-size: cover;
-
+  /* background-size: cover; */
 } 
 
 .cadastro__img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-
- 
+  height: auto;
+  /* min-height: 100%; */
+  max-height: 1024px;
+  /* object-fit: cover;  */
 }
 
 
@@ -26,21 +27,23 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
+  align-items: start;
   width: 50%;
-  padding-left: 100px;
+  padding: 50px 80px;
 }
 
 .cadastro__voltar {
-
   display: flex;
   color: var(--rosa-1);
   font-size: 20px;
   justify-content: start;
   margin-top: 8px;
   margin-bottom: 8px;
-
 }
 
+.cadastro__voltar:hover{
+  color: var(--marrom-1);
+}
 
 .cadastro__title {
 
@@ -52,13 +55,22 @@
 
 
 .cadastro__formulario {
-  width: 80%;
+  /* width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  gap: 8px;
+  gap: 8px; */
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding-top: 20px;
+  gap: 10px;
 }
 
 
