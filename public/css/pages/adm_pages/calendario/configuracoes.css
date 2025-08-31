@@ -14,14 +14,24 @@
 
     & .configuracao_button_verde {
         background-color: var(--verde);
-        padding: 16px 34px;
+        padding: 16px 16px;
+        width: 100px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: var(--rosa-4);
         border-radius: 16px;
     }
 
      & .configuracao_button_vermelho {
         background-color: var(--vermelho);
-        padding: 16px 34px;
+        padding: 16px 16px;
+        width: 100px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: var(--rosa-4);
         border-radius: 16px;
     }
@@ -29,7 +39,7 @@
     & .configuracao_box_info {
         display: flex;
         align-items: center;
-        gap: 5%;
+        gap: 8px;
         width: 100%;
 
         & .configuracao_capacidade_box {
@@ -79,12 +89,13 @@
     justify-content: space-between !important;
 }
 
+
+
 .configuracao_line_execao_box {
 
-    & a {
+    /* & a {
         color: var(--rosa-1);
-    }
-
+    } */
 
     display: flex;
     align-items: center;
@@ -96,14 +107,24 @@
 
     & .configuracao_button_verde {
         background-color: var(--verde);
-        padding: 16px 34px;
+        padding: 16px 16px;
+        width: 100px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: var(--rosa-4);
         border-radius: 16px;
     }
 
      & .configuracao_button_vermelho {
         background-color: var(--vermelho);
-        padding: 16px 34px;
+        padding: 16px 16px;
+        width: 100px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: var(--rosa-4);
         border-radius: 16px;
     }
@@ -155,4 +176,22 @@
         }
     }
 
+}
+
+.configuracao_line_box a {
+    color: var(--rosa-1);
+}
+.configuracao_line_box a:hover {
+    color: var(--marrom-1);
+}
+
+.configuracao_line_execao_box a {
+    color: var(--rosa-1);
+}
+.configuracao_line_execao_box a:hover {
+    color: var(--marrom-1);
+}
+
+.calendario_config_semana{
+    min-width: 180px;
 }
