@@ -17,6 +17,7 @@
     flex-direction: column;
     gap: 16px;
     padding:32px;
+    box-sizing: border-box;
 }
 
 .dash_servico_servico {
