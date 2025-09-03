@@ -1,3 +1,4 @@
+
 // Util - 1 - Redirecionar para página do botão.
 function navegar(path) {
     window.location.href = path;
@@ -61,6 +62,33 @@ function formatarCPFInput(inputElement) {
       formatar();
     }
   });
+}
+
+function validarCamposCadastro(nome, telefone, email, senha, senhaConfirmar) {
+
+    const regexTelefone = /^[0-9]{11}$/; 
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (nome.length === 0 || nome.length > 50) {
+        return "O nome deve ter entre 1 e 50 caracteres.";
+    }
+
+    if (!regexTelefone.test(telefone)) {
+        return "O telefone deve conter exatamente 11 dígitos numéricos.";
+    }
+
+    if (!regexEmail.test(email)) {
+        return "E-mail inválido.";
+    }
+
+    if (senha.length === 0 || senha.length > 30) {
+        return "A senha deve ter entre 1 e 30 caracteres.";
+    }
+
+    if (senha !== senhaConfirmar) {
+        return "As senhas não coincidem.";
+    }
+    return true; 
 }
 
 function verificarLogin() {

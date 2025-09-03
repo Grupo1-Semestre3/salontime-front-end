@@ -1,3 +1,10 @@
+// cadastro.js
+import {
+  validarCamposCadastro,
+  mensagemErro,
+  formatarNomeInput
+} from '../utils/utils_cliente_pages.js';
+
 function listar() {
 
   let mensagem = "";
@@ -66,9 +73,7 @@ function listar() {
 
 }
 
-
-
-function cadastrarCliente(){
+function cadastrarCliente() {
 
   const nome = document.getElementById("cadastro_form_nome").value;
   const email = document.getElementById("cadastro_form_email").value;
@@ -76,22 +81,30 @@ function cadastrarCliente(){
   const senha = document.getElementById("cadastro_form_senha").value;
   const senhaConfirmar = document.getElementById("cadastro_form_confirmar").value;
 
-  fetch("http://localhost:8080/usuarios/cadastro", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ nome, email, senha, telefone })
-  })
-    .then(resposta => resposta.json())
-    .then(
+  const validar = validarCamposCadastro(nome, telefone, email, senha, senhaConfirmar);
 
-      loginComParametroPosCad(email, senha)
+  if (validar != true) {
+    mensagemErro(validar)
+  } else {
+    nome = formatarNomeInput(nome)
+    fetch("http://localhost:8080/usuarios/cadastro", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ nome, email, senha, telefone })
+    })
+      .then(resposta => resposta.json())
+      .then(
 
-    )
-    .catch(erro => {
-      console.error("Erro no login:", erro);
-    });
+        loginComParametroPosCad(email, senha)
+
+      )
+      .catch(erro => {
+        console.error("Erro no login:", erro);
+      });
+
+  }
 
 }
 
