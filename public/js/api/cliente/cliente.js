@@ -123,7 +123,18 @@ function loginComParametroPosCad(email, senha) {
 
         sessionStorage.setItem("usuario", JSON.stringify(dados));
         localStorage.setItem('isLoggedIn', '1')
-        window.location.href = "/public/html/adm_pages/calendario_visao_geral.html";
+
+          if (dados.tipoUsuario.descricao == "CLIENTE") {
+
+          console.log("Cliente logado:", dados.nome);
+
+          window.location.href = "/html/client_pages/servicos.html";
+
+        } else if (dados.tipoUsuario.descricao == "FUNCIONARIO" || dados.tipoUsuario.descricao == "ADMINISTRADOR") {
+          console.log("Fun ou administrador logado:", dados.nome);
+
+          window.location.href = "/html/adm_pages/calendario_visao_geral.html";
+        }
 
       } else {
         alert("E-mail ou senha inválidos.");
