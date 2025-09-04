@@ -2,10 +2,11 @@
 
 # START JSON-SERVER: 
 ```
-    -npx json-server --watch banco_mock.json --port 3000
+    npx json-server --watch banco_mock.json --port 3000
 ```
 
 # START NODE.JS:
 ```
-    python -m http.server -port 3300
+    WINDOWS: python -m http.server 3300
+    MAC OS: python3 -m http.server 3300
 ```
