@@ -1,10 +1,4 @@
 // cadastro.js
-import {
-  validarCamposCadastro,
-  mensagemErro,
-  formatarNomeInput
-} from '../utils/utils_cliente_pages.js';
-
 function listar() {
 
   let mensagem = "";
@@ -121,7 +115,7 @@ function loginComParametroPosCad(email, senha) {
     .then(dados => {
       if (dados) {
 
-        sessionStorage.setItem("usuario", JSON.stringify(dados));
+        localStorage.setItem("usuario", JSON.stringify(dados));
         localStorage.setItem('isLoggedIn', '1')
 
           if (dados.tipoUsuario.descricao == "CLIENTE") {
@@ -161,7 +155,7 @@ function login() {
     .then(dados => {
       if (dados) {
 
-        sessionStorage.setItem("usuario", JSON.stringify(dados));
+        localStorage.setItem("usuario", JSON.stringify(dados));
         localStorage.setItem('isLoggedIn', '1')
 
          if (dados.tipoUsuario.descricao == "CLIENTE") {
@@ -190,7 +184,7 @@ function login() {
 
 function logout() {
 
-  const usuario = JSON.parse(sessionStorage.getItem("usuario"));
+  const usuario = JSON.parse(localStorage.getItem("usuario"));
 
   console.log(usuario.id)
 
@@ -201,7 +195,7 @@ function logout() {
     .then(resposta => resposta.json())
     .then(dados => {
       console.log("Limpando console")
-      sessionStorage.clear();
+      localStorage.clear();
 
     })
     .catch(erro => {
