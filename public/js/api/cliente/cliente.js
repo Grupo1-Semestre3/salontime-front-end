@@ -198,6 +198,7 @@ function logout() {
     .then(dados => {
       console.log("Limpando console")
       localStorage.clear();
+      window.location.href = "/html/client_pages/index.html";
 
     })
     .catch(erro => {
