@@ -78,9 +78,11 @@ function cadastrarCliente() {
   const validar = validarCamposCadastro(nome, telefone, email, senha, senhaConfirmar);
 
   if (validar != true) {
-    mensagemErro(validar)
+    //mensagemErro(validar)
+    console.log(validar)
   } else {
-    nome = formatarNomeInput(nome)
+    //nome = formatarNomeInput(nome)
+
     fetch("http://localhost:8080/usuarios/cadastro", {
       method: "POST",
       headers: {

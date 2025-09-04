@@ -49,7 +49,7 @@
 
   <section class="principal_section" id="section_proximos_atendimentos" style="display: none;">
     <div class="home_session_pai">
-      <h2 class="super-titulo">Bem vinda de volta Juliana!</h2>
+      <h2 id="nomeDinamico" class="super-titulo"></h2>
 
       <div class="conteudo_proximo_agendamento">
         <span class="paragrafo-1">Você tem 1 horário marcado:</span>
@@ -190,3 +190,12 @@
 
 </body>
 </html>
+<script>
+
+const usuario = JSON.parse(localStorage.getItem("usuario"));
+
+const elementoNomeDinamico = document.getElementById("nomeDinamico")
+
+elementoNomeDinamico.innerHTML = `Bem vinda de volta ${usuario.nome}!`
+
+</script>
