@@ -120,7 +120,7 @@ function loginComParametroPosCad(email, senha) {
         localStorage.setItem("usuario", JSON.stringify(dados));
         localStorage.setItem('isLoggedIn', '1')
 
-          if (dados.tipoUsuario.descricao == "CLIENTE") {
+        if (dados.tipoUsuario.descricao == "CLIENTE") {
 
           console.log("Cliente logado:", dados.nome);
 
@@ -160,11 +160,14 @@ function login() {
         localStorage.setItem("usuario", JSON.stringify(dados));
         localStorage.setItem('isLoggedIn', '1')
 
-         if (dados.tipoUsuario.descricao == "CLIENTE") {
+        if (dados.tipoUsuario.descricao == "CLIENTE") {
 
           console.log("Cliente logado:", dados.nome);
           mensagemSucesso("Login realizado com sucesso!")
-          window.location.href = "/html/client_pages/servicos.html";
+
+          setTimeout(function () {
+            window.location.href = "/html/client_pages/servicos.html";
+          }, 1500);
 
         } else if (dados.tipoUsuario.descricao == "FUNCIONARIO" || dados.tipoUsuario.descricao == "ADMINISTRADOR") {
           console.log("Fun ou administrador logado:", dados.nome);
@@ -181,6 +184,7 @@ function login() {
       }
     })
     .catch(erro => {
+      mensagemErro("E-mail ou senha inválidos.");
       console.error("Erro no login:", erro);
     });
 }
