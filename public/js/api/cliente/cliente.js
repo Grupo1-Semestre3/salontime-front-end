@@ -78,7 +78,7 @@ function cadastrarCliente() {
   const validar = validarCamposCadastro(nome, telefone, email, senha, senhaConfirmar);
 
   if (validar != true) {
-    //mensagemErro(validar)
+    mensagemErro(validar)
     console.log(validar)
   } else {
     //nome = formatarNomeInput(nome)
@@ -92,7 +92,7 @@ function cadastrarCliente() {
     })
       .then(resposta => resposta.json())
       .then(
-
+        mensagemSucesso("Cadastro realizado com sucesso!"),
         loginComParametroPosCad(email, senha)
 
       )
@@ -163,12 +163,12 @@ function login() {
          if (dados.tipoUsuario.descricao == "CLIENTE") {
 
           console.log("Cliente logado:", dados.nome);
-
+          mensagemSucesso("Login realizado com sucesso!")
           window.location.href = "/html/client_pages/servicos.html";
 
         } else if (dados.tipoUsuario.descricao == "FUNCIONARIO" || dados.tipoUsuario.descricao == "ADMINISTRADOR") {
           console.log("Fun ou administrador logado:", dados.nome);
-
+          mensagemSucesso("Login realizado com sucesso!")
           window.location.href = "/html/adm_pages/calendario_visao_geral.html";
         }
 
@@ -176,7 +176,8 @@ function login() {
         console.log("Usuário logado:", dados.nome);
 
       } else {
-        alert("E-mail ou senha inválidos.");
+        mensagemErro("E-mail ou senha inválidos.");
+
       }
     })
     .catch(erro => {

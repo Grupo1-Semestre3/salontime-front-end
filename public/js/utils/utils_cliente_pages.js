@@ -73,12 +73,12 @@ function validarCamposCadastro(nome, telefone, email, senha, senhaConfirmar) {
     return "O nome deve ter entre 1 e 50 caracteres.";
   }
 
-  if (!regexTelefone.test(telefone)) {
-    return "O telefone deve conter exatamente 11 dígitos numéricos.";
-  }
-
   if (!regexEmail.test(email)) {
     return "E-mail inválido.";
+  }
+  
+  if (!regexTelefone.test(telefone)) {
+    return "O telefone deve conter exatamente 11 dígitos numéricos.";
   }
 
   if (senha.length === 0 || senha.length > 30) {
@@ -141,4 +141,20 @@ function verificarLoginServicos() {
     section_proximos_atendimentos.style.display = 'none';
     section_marina_points.style.display = 'none';
   }
+}
+
+function mensagemErro(mensagem) {
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: mensagem,
+  });
+}
+function mensagemSucesso(mensagem) {
+  Swal.fire({
+    title: mensagem,
+    icon: "success",
+    showConfirmButton: false,
+    timer: 1500
+  });
 }
