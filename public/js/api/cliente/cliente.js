@@ -123,20 +123,28 @@ function loginComParametroPosCad(email, senha) {
         if (dados.tipoUsuario.descricao == "CLIENTE") {
 
           console.log("Cliente logado:", dados.nome);
+          mensagemSucesso("Login realizado com sucesso!")
 
-          window.location.href = "/html/client_pages/servicos.html";
+          setTimeout(function () {
+            window.location.href = "/html/client_pages/servicos.html";
+          }, 1500);
 
         } else if (dados.tipoUsuario.descricao == "FUNCIONARIO" || dados.tipoUsuario.descricao == "ADMINISTRADOR") {
           console.log("Fun ou administrador logado:", dados.nome);
-
+          mensagemSucesso("Login realizado com sucesso!")
           window.location.href = "/html/adm_pages/calendario_visao_geral.html";
         }
 
+
+        console.log("Usuário logado:", dados.nome);
+
       } else {
-        alert("E-mail ou senha inválidos.");
+        mensagemErro("E-mail ou senha inválidos.");
+
       }
     })
     .catch(erro => {
+      mensagemErro("E-mail ou senha inválidos.");
       console.error("Erro no login:", erro);
     });
 }
