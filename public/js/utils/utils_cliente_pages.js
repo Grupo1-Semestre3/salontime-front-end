@@ -73,14 +73,14 @@ function validarCamposCadastro(nome, telefone, email, senha, senhaConfirmar) {
     return "O nome deve ter entre 1 e 50 caracteres.";
   }
 
+  if(telefone.length != 11){
+    return "O telefone deve conter exatamente 11 dígitos numéricos.";
+  }
+
   if (!regexEmail.test(email)) {
     return "E-mail inválido.";
   }
   
-  if (!regexTelefone.test(telefone)) {
-    return "O telefone deve conter exatamente 11 dígitos numéricos.";
-  }
-
   if (senha.length === 0 || senha.length > 30) {
     return "A senha deve ter entre 1 e 30 caracteres.";
   }

@@ -91,13 +91,13 @@ function cadastrarCliente() {
       body: JSON.stringify({ nome, email, senha, telefone })
     })
       .then(resposta => resposta.json())
-      .then(
-        mensagemSucesso("Cadastro realizado com sucesso!"),
-        loginComParametroPosCad(email, senha)
-
-      )
+      .then(dados => {
+        mensagemSucesso("Cadastro realizado com sucesso!");
+        loginComParametroPosCad(email, senha);
+      })
       .catch(erro => {
-        console.error("Erro no login:", erro);
+        console.error("Erro no cadastro:", erro);
+        mensagemErro("Erro ao cadastrar. Tente novamente.");
       });
 
   }
