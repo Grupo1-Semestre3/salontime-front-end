@@ -1,0 +1,10 @@
+/* Import all home section styles */
+@import url('./home_section.css');
+@import url('./especialidade_section.css');
+@import url('./portifolio_section.css');
+@import url('./sobre_mim_section.css');
+@import url('./localiza_section.css');
+
+.home-page {
+  width: 100%;
+}
