@@ -1,12 +1,53 @@
-# salontime-front-end
+# 💇‍♀️ Salon Time - Frontend React
 
-# START JSON-SERVER: 
+Bem-vindo ao **Salon Time**, um sistema de gestão para salões de beleza com frontend em **React + Vite**.  
+O projeto inclui funcionalidades de agenda, cadastro de serviços, controle mensal e muito mais — tudo acessível em uma **dashboard moderna**.  
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- ⚛️ [React](https://react.dev/)  
+- ⚡ [Vite](https://vitejs.dev/)  
+- 🔀 [React Router DOM](https://reactrouter.com/)  
+- 📅 [React Big Calendar](https://github.com/jquense/react-big-calendar)  
+- ⏰ [Moment.js](https://momentjs.com/)  
+- 🎨 CSS customizado  
+
+---
+
+## 📦 Instalação do Projeto
+
+1. Clone o repositório:
+
+```bash
+git clone [colocar link]
+cd seu-repositorio
+``` 
+
+2. Depedencias:
+
 ```
-    npx json-server --watch banco_mock.json --port 3000
+npm install
+```
+```
+npm install axios
+```
+```
+npm install moment
+```
+```
+npm install chart.js react-chartjs-2
+```
+```
+npm install react-big-calendar moment
+```
+```
+npm install sweetalert2
 ```
 
-# START NODE.JS:
+3. Rodar projeto:
+
 ```
-    WINDOWS: python -m http.server 3300
-    MAC OS: python3 -m http.server 3300
+npm run dev
 ```
