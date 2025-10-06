@@ -1,0 +1,31 @@
+/* App Layout Styles */
+.app {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.client-layout {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.client-content {
+  padding-top: 64px; /* Account for fixed navbar */
+  width: 100%;
+}
+
+.admin-layout {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.dash_section_pai {
+  display: flex;
+  min-height: 100vh;
+}
+
+.dash_section_filho {
+  flex: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
